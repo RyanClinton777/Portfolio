@@ -59,11 +59,7 @@ hr {
     transition: all .25s ease-in;
 }
 
-.header-link:hover {
-    color: yellow;
-}
-
-.site-logo {
+.header-link .site-logo {
     transition: all 0.25s ease-in-out;
     width: 16%;
     height: auto;
@@ -71,7 +67,8 @@ hr {
     margin-right: 2%;
 }
 
-.site-logo:hover {
+/* change css of site-logo (child) when header-link (parent) is hovered over */
+.header-link:hover .site-logo{
     filter: invert(1); /* Needs to pass in 1 to work on FireFox */
 }
 
@@ -103,14 +100,15 @@ hr {
     text-align: center;
 }
 
+.site-nav-item:hover {
+    color: orange;
+    text-shadow: 0rem 1px 15px rgba(255, 255, 255, 0.4);
+}
+
 .site-nav-seperator {
     border-left: 1px solid #ccc;
     margin: 0 10px;
     height: 100%;
-}
-
-.site-nav-item:hover {
-    border-bottom: 1px solid white;
 }
 
 .card {
@@ -194,4 +192,13 @@ hr {
     text-align: start;
     font-size: large;
     font-weight: bold;
+}
+
+.contact-icon {
+    color: white;
+}
+
+.contact-icon:hover {
+    color: orange;
+    text-shadow: 0rem 1px 15px rgba(255, 255, 255, 0.4);
 }
