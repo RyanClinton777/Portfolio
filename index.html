@@ -20,7 +20,6 @@
     <!-- animate__animated is the base class that allows us to use animations -->
     <div class="site-header animate__animated animate__slideInDown animate__faster">
         <a class="header-link" href="http://www.ryanclinton.dev/">
-            <i><b style="color: gray; font-style: italic;">ryanclinton.dev</b></i>
             <div></div>
             <img class="site-logo" src="assets/logo.png">
             <h1>Ryan Clinton</h1>
@@ -28,21 +27,21 @@
         </a>
 
         <div class="site-nav">
-            <a class="site-nav-item" href="1">About me</a>
+            <a class="site-nav-item" href="#about">About me</a>
             <span class="site-nav-seperator"></span>
-            <a class="site-nav-item" href="2">Projects</a>
+            <a class="site-nav-item" href="#projects">Projects</a>
             <span class="site-nav-seperator"></span>
-            <a class="site-nav-item" href="3">Contact</a>
+            <a class="site-nav-item" href="#contact">Contact</a>
         </div>
     </div>
 
     <!-- ABOUT ME CARD -->
-    <div class="card">
+    <div class="card" id="about">
         <div class="card-header">
             <h2>ABOUT ME</h2>
         </div>
         <div class="card-body">
-            Hi, I'm Ryan. I am a Full-Stack software developer based in Galway City.
+            Hi, I'm Ryan. I am a full-stack software developer based in Galway City.
             <hr>
             <div style="display: flex; flex-wrap: wrap; justify-content: space-between; ">
                 <!-- Certifications -->
@@ -75,7 +74,7 @@
     </div>
 
     <!-- PROJECTS CARD -->
-    <div class="card">
+    <div class="card" id="projects">
         <!-- Card Header -->
         <div class="card-header">
             <h2>PROJECTS</h2>
@@ -124,9 +123,9 @@
                     <p>
                         This was a college project for a real client in galway, who wanted a system developed to keep track of the various processes involved in the creation of the various types of sprits they produce. It involved working under an NDA as we were given access to confidential information.
                         <br><br>
-                        I was part of a 4-man team, which was divided into 2 each on the front and back-ends. I was the lead on the back-end team, and we were tasked with creating a server and RESTful API to interface with a MySQL database for the React front-end. 
+                        I was part of a 4-man team, which was divided into 2 each on the front and back-ends. I was the lead on the back-end team; we were tasked with creating a server and RESTful API to interface with a MySQL database for the React front-end. 
                         <br><br>
-                        The project was ultimately unfinished due to time constraints, but in the 8 weeks we had we created a foundation for future development and it was an intense excercise in systems analysis, data modeling, database design and project management.
+                        The project was ultimately unfinished due to time constraints; but in the 8 weeks we had, we created a foundation for future development and it was an intense excercise in systems analysis, data modeling, database design and project management.
                     </p>
                 </div>
             </div>
@@ -134,7 +133,7 @@
     </div>
 
     <!-- CONTACT CARD -->
-    <div class="card">
+    <div class="card" id="contact">
         <div class="card-header">
             <h2>CONTACT</h2>
         </div>
@@ -147,7 +146,7 @@
     <!-- FOOTER -->
     <div class="site-footer">
         <address>
-            © <a style="text-decoration: none; color: orange;" href="http://www.ryanclinton.dev/">Ryan
+            © <a style="text-decoration: none; color: orange;" href="mailto:ryanmathewclinton@hotmail.com">Ryan
                 Clinton</a> 2021<br>
         </address>
     </div>
