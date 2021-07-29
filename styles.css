@@ -65,10 +65,14 @@ hr {
 
 .site-logo {
     transition: all 0.25s ease-in-out;
+    width: 16%;
+    height: auto;
+    float: left;
+    margin-right: 2%;
 }
 
 .site-logo:hover {
-    filter: invert();
+    filter: invert(1); /* Needs to pass in 1 to work on FireFox */
 }
 
 .site-footer {
