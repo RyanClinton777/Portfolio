@@ -3,9 +3,8 @@ html {
     background-image: repeating-linear-gradient(to bottom right, white, AliceBlue, CornflowerBlue, DodgerBlue, black);
     background-attachment: fixed;
     color: white;
-    font-weight: 300;
-    font-family: Noto Sans, sans-serif;
     height: 100%;
+    font-family: Tahoma, sans-serif;
 }
 
 body {
@@ -51,6 +50,7 @@ hr {
     padding-top: 1.5%;
     padding-bottom: 1.5%;
     height: auto;
+    font-family: Noto Sans, sans-serif;
 }
 
 .header-link {
@@ -84,6 +84,7 @@ hr {
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
+    font-family: Noto Sans, sans-serif;
 }
 
 .site-nav {
@@ -131,6 +132,7 @@ hr {
     background-image: linear-gradient(to right, black, rgb(19, 17, 30));
     text-align: center;
     padding: 0.75%;
+    font-family: Noto Sans, sans-serif;
 }
 
 .card-body {
@@ -152,12 +154,10 @@ hr {
 }
 
 .project-item {
-    border: 1px dotted rgb(135, 133, 133);
+    border: 1px solid rgb(135, 133, 133);
     border-radius: 15px;
     display: flex;
-    justify-content: stretch;
     flex: content;
-    overflow: auto;
 }
 
 .project-item-thumbnail-left {
@@ -165,8 +165,6 @@ hr {
     border-bottom-left-radius: 15px;
     width: 25%;
     height: auto;
-    flex-grow: 0.2;
-    flex-shrink: 0.2;
     overflow: hidden;
     background-size: cover;
     background-position: center;
@@ -176,11 +174,10 @@ hr {
 
 .project-item-body {
     width: 75%;
+    height: auto;
     background-color: whitesmoke;
     color: black;
     padding: 1%;
-    flex-grow: 1;
-    flex-shrink: 1;
 }
 
 .project-item-body p {
