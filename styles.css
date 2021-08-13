@@ -35,7 +35,7 @@ h3 {
 
 hr {
     width: 100%;
-    border-color: gray;
+    border-color: rgb(125, 125, 125);
 }
 
 .site-header {
@@ -140,7 +140,7 @@ hr {
     border-bottom-right-radius: 15px;
     background-color: rgb(20, 20, 20);
     padding: 1.5%;
-    gap: 8px;
+    gap: 8px; /* Doesn't work on old versions of Firefox, add fallback? */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -193,6 +193,7 @@ hr {
 
 .contact-icon {
     color: white;
+    transition: all .1s ease-out;
 }
 
 .contact-icon:hover {
